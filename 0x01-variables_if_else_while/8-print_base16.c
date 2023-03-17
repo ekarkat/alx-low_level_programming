@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (a == 57)
 			a = 97;
-		if (a == 102)
+		if (a == 103)
 			break;
 		putchar(a);
 		a = a + 1;
