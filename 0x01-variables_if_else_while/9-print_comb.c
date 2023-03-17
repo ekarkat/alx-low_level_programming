@@ -15,6 +15,7 @@ int main(void)
 		if (a == 57)
 			break;
 		putchar(44);
+		putchar('\n')
 		a = a + 1;
 	}
 	putchar('\n');
