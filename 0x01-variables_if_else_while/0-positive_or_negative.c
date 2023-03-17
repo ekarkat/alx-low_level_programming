@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* more headers goes there */
+/**
+* main - Print whether the number stored in the variable n is posi or negatie
+* Return: Always 0 (Success)
+*/
 
-/*main -  print whether the number stored in the variable n is positive or negative*/
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
