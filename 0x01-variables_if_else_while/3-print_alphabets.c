@@ -17,7 +17,7 @@ int main(void)
 	}
 	while (b <= 90) /* UPPER CASE */
 	{
-		putchar(b)
+		putchar(b);
 	}
 	putchar('\n');
 	return (0);
