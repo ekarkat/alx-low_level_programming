@@ -17,6 +17,6 @@ void print_alphabet_x10(void)
 			a = a + 1;
 		}
 		_putchar('\n');
-		n = n + 1;	
+		n = n + 1;
 	}
 }
