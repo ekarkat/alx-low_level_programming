@@ -36,6 +36,4 @@ void jack_bauer(void)
 		}
 	d3 = d3 + 1;
 	}
-	return (0);
 }
-
