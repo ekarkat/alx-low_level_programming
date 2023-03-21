@@ -2,17 +2,17 @@
 
 /**
  * _abs - Computes the absolute value of an integer
- * * @a: the variable
+ * * @n: the variable
  * Return: none
  */
 
-int _abs(int a)
+int _abs(int n)
 {
 	int b;
 
 	if (n < 0)
 	{
-		b = -a;
+		b = -n;
 		_putchar(b);
 	}
 	else if (n == 0)
@@ -21,6 +21,6 @@ int _abs(int a)
 	}
 	else
 	{
-		_putchar(a);
+		_putchar(n);
 	}
 }
