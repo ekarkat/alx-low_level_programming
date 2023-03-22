@@ -5,14 +5,14 @@
 
 void times_table(void)
 {
-	int n, k, mp;
+	int i, k, mp;
 
-	while (n <= 9)
+	while (i <= 9)
 	{
 		k = 0;
 		while (k <= 9)
 		{
-			mp = n * k;
+			mp = i * k;
 			if (mp < 10)
 			{
 				_putchar(mp + '0');
@@ -20,7 +20,7 @@ void times_table(void)
 					break;
 				_putchar(',');
 				_putchar(' ');
-				if ((mp + n) < 10)
+				if ((mp + i) < 10)
 				_putchar(' ');
 			}
 			else
@@ -35,7 +35,7 @@ void times_table(void)
 			k = k + 1;
 		}
 		_putchar('\n');
-		n = n + 1;
+		i = i + 1;
 	}
 
 }
