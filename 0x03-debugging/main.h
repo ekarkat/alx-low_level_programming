@@ -1,5 +1,4 @@
-#ifdef BOO_H
-#define BOO_H
-
+#ifdef MAIN_H
+#define MAIN_H
 int largest_number(int a, int b, int c);
 #endif 
