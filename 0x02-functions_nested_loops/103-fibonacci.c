@@ -11,9 +11,9 @@ int main(void)
 	i = 1;
 	n = 2;
 	m = 0;
-	while (j < 4000000)
+	while (n < 4000000)
 	{
-		if (j % 2 == 0)
+		if (n % 2 == 0)
 			m = m + j;
 		k = n;
 		n = n + i;
