@@ -10,7 +10,6 @@ int main(void)
 
 	k = 2;
 	i = 1;
-	n = 0;
 	printf("1, 2, ");
 	for (i = 1; i <= 50; i = i + 1)
 	{
