@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - prints the numbers, from 0 to 14
+ * print_numbers - prints the numbers, from 0 to 14
 */
 void print_numbers(void)
 {
@@ -10,9 +10,12 @@ void print_numbers(void)
 	for (i = 0; i <= 9; i = i + 1)
 	{
 		j = 0;
-		for (; j<= 9; j = j + 1)
-		_putchar(j + '0');
+		for (; j<= 14; j = j + 1)
+		{
+			if (j > 9)
+			_putchar('1');
+			_putchar((j % 10) + '0')
+		}
 		_putchar('\n');
 	}
-	_putchar('\n');
 }
