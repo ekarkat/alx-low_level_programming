@@ -10,7 +10,7 @@ void print_numbers(void)
 	for (i = 0; i <= 9; i = i + 1)
 	{
 		j = 0;
-		for (; j<= 14; j = j + 1)
+		for (; j <= 14; j = j + 1)
 		{
 			if (j > 9)
 			_putchar('1');
