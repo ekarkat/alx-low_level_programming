@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long int i, k, n, m;
+	int i, k, n, m;
 
 	k = 1;
 	m = 1;
@@ -21,6 +21,6 @@ int main(void)
 			m = n;
 		}
 	}
-	printf("%lu\n, i");
+	printf("%d\n", i);
 	return (0);
 }
