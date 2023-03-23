@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long int i, k, n;
+	long int i, k;
 
 	k = 2;
 	i = 1;
