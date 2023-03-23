@@ -6,13 +6,13 @@
 
 int main(void)
 {
-	long long int i, k, n, m;
+	long int i, k, n, m;
 
 	k = 1;
 	m = 1;
 	for (i = 1; i <= 50; i = i + 1)
 	{
-		printf("%lli", k);
+		printf("%lu", k);
 		if (i < 50)
 		printf(", ");
 		n = k;
