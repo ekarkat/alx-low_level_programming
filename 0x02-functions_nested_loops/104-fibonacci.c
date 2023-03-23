@@ -10,7 +10,7 @@ int main(void)
 
 	k = 1;
 	m = 1;
-	for (i = 1; i <= 98, i = i + 1)
+	for (i = 1; i <= 98; i = i + 1)
 	{
 		printf("%lu", k);
 		if (i < 98)
