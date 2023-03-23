@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	long long int i, k, n;
+	long int i, k, n;
 
 	k = 2;
 	i = 1;
@@ -15,8 +15,8 @@ int main(void)
 	for (i = 1; i <= 50; i = i + 1)
 	{
 		k = k + (k - 1);
-		printf("%lli", k);
-		if (i < 50)	
+		printf("%lu", k);
+		if (i < 50)
 		printf(", ");
 	}
 	printf("\n");
