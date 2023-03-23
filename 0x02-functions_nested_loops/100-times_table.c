@@ -11,6 +11,8 @@ int i, k, mp;
 
 for (i = 0; i <= n; i = i + 1)
 {
+if (n > 15)
+break;
 k = 0;
 for (; k <= n; k = k + 1)
 {
