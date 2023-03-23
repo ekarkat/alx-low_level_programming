@@ -8,19 +8,17 @@ int main(void)
 {
 	int i, k, n, m;
 
-	k = 1;
-	m = 1;
 	i = 1;
-	for (; k <= 4000000;)
+	j = 2;
+	m = 0;
+	while (j < 4000000)
 	{
-		if ((k % 2) == 0)
-		{
-			i = i + k;
-			n = k;
-			k = k + m;
-			m = n;
-		}
+		if (j % 2 == 0)
+			m = m + j;
+		k = j;
+		j = j + i;
+		i = k;
 	}
-	printf("%d\n", i);
+	printf("%d\n", m);
 	return (0);
 }
