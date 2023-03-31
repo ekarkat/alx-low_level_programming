@@ -16,5 +16,5 @@ char *cap_string(char *str)
 			str[i] = str[i] - 97 + 65;
 	}
 
-	return (str)
+	return (str);
 }
