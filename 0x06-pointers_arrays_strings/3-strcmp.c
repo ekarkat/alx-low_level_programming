@@ -4,12 +4,12 @@
  * _strcmp - compares two strings
  * @s1: first string
  * @s2: second string
- * Return: the diffrence
- */
+ * Return: the diffrence between s1 and s2
+*/
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, df;
+	int i, di;
 
 	i = 0;
 	while (s1[i] == s2[i])
@@ -19,6 +19,6 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	}
 
-	df = (s1[i] - s2[i])
-	return (df);
+	di = (s1[i] - s2[i])
+	return (di);
 }
