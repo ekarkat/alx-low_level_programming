@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _strchr - a function that locates a character in a string.
  * @s: the source
@@ -14,10 +16,11 @@ char *_strchr(char *s, char c);
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
-			return (s[i]);
+			return (s + i);
+			break;
 		i++;
 	}
 
-	if (s[i] == c)
-		return (s[i]);
+	if (s[i] != c)
+		return ('\0');
 }
