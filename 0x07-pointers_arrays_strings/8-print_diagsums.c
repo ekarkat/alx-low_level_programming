@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * print_diagsums - sum of the diagboles
  * @a: the array matrix
@@ -16,7 +15,7 @@ void print_diagsums(int *a, int size)
 	d2 = 0;
 
 	for (; i < size; i++)
-	{		
+	{
 		d1 = d1 + a[i][i];
 		d2 = d2 + a[size - 1 - i][size - 1 - i];
 	}
