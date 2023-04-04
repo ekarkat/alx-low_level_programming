@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * _strspn - Locates a character in a string
  * @s: string
