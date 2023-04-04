@@ -21,5 +21,5 @@ void print_diagsums(int *a, int size)
 		d2 = d2 + a[size - i][size - i];
 	}
 
-	printf("%i, %i\n", sum1, sum2);
+	printf("%i, %i\n", d1, d2);
 }
