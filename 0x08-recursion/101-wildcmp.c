@@ -9,14 +9,12 @@
  */
 int find(char *s1, char sc2, int i, int j)
 {
-	if (*(s1 + i) == '\0')
-		return (i - 1);
-	if (sc2 == '*')
-		return (i);
+	if (i == 0)
+		return (1);
 	else if (sc2 == *(s1 + i))
 		return (i);
 	else
-		return (find(s1, sc2, i + 1, j));
+		return (find(s1, sc2, i - 1, j));
 
 }
 /**
@@ -29,8 +27,11 @@ int find(char *s1, char sc2, int i, int j)
  */
 int test(char *s1, char *s2, int i, int j)
 {
+	int d = ln(s1) - 1;
+
 	if (*(s2 + j) == '*' && *(s2 + j + 1) == '\0')
 		return (1);
+
 	if (*(s1 + i) == '\0' && *(s2 + j) == '\0')
 		return (1);
 
@@ -39,7 +40,9 @@ int test(char *s1, char *s2, int i, int j)
 
 	else if (*(s2 + j) == '*')
 	{
-		i = find(s1, *(s2 + j + 1), i, j) - 1;
+		if (*(s2 + j + 1) == '*')
+			return (test(s1, s2, i, j + 1));
+		i = find(s1, *(s2 + j + 1), d, j) - 1;
 		return (test(s1, s2, i + 1, j + 1));
 	}
 
