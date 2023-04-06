@@ -37,7 +37,7 @@ int test(char *s1, char *s2, int i, int j)
 
 	else if (*(s2 + j) == '*')
 	{
-		i = find(s1, *(s2 + j + 1), i, j) - 1;
+		i = find(s1, *(s2 + j + 1), i + 1, j) - 1;
 		return (test(s1, s2, i + 1, j + 1));
 	}
 
