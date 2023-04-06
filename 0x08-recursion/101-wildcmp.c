@@ -7,9 +7,9 @@
  */
 int ln(char *s)
 {
-        if (*s !='\0')
-                return (1 + ln(s + 1));
-	        return (0);
+	if (*s != '\0')
+		return (1 + ln(s + 1));
+	return (0);
 }
 /**
  * find - return the match index inside a string
