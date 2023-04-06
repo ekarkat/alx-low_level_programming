@@ -10,7 +10,9 @@
 int find(char *s1, char sc2, int i, int j)
 {
 	if (*(s1 + i) == '\0')
-		return (j);
+		return (i - 1);
+	if (sc2 == '*')
+		return (i);
 	else if (sc2 == *(s1 + i))
 		return (i);
 	else
@@ -37,7 +39,7 @@ int test(char *s1, char *s2, int i, int j)
 
 	else if (*(s2 + j) == '*')
 	{
-		i = find(s1, *(s2 + j + 1), i + 1, j) - 1;
+		i = find(s1, *(s2 + j + 1), i, j) - 1;
 		return (test(s1, s2, i + 1, j + 1));
 	}
 
