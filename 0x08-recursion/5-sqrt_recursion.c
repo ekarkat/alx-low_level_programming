@@ -24,7 +24,7 @@ int test(int n, int i)
  */
 int _sqrt_recursion(int n)
 {
-	if ( n == 1)
+	if (n == 1)
 		return (1);
 	return (test(n, 1));
 }
