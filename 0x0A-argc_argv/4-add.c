@@ -22,9 +22,11 @@ int main(int argc, char *argv[])
 	for (i = 1; i <= argc - 1; i++)
 	{
 		char *r = argv[i];
+
 		for (j = 0; r[j] != '\0'; j++)/*Check if argv[i] is a digit*/
 		{
 			int id = isdigit(r[j]);
+
 			if (id == 0)
 			{
 				printf("Errorr\n");
