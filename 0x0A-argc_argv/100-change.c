@@ -21,18 +21,21 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-		for (j = 0; r[j] != '\0'; j++)/*Check if argv[i] is a digit*/
+	for (j = 0; r[j] != '\0'; j++)
+	{
+		int id = isdigit(r[j]);
+
+		if (id == 0)
 		{
-			int id = isdigit(r[j]);
-
-			if (id == 0)
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
-		a = atoi(argv[1]);
-
+	}
+	a = atoi(argv[1]);
+	if (a < 0)
+	{
+		printf("0\n");
+	}
 	c25 = a / 25;
 	c10 = (a % 25) / 10;
 	c5 = (a - (c25 * 25 + c10 * 10)) / 5;
