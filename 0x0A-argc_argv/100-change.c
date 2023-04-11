@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 
 			if (id == 0)
 			{
-				printf("Errorr\n");
+				printf("Error\n");
 				return (1);
 			}
 		}
