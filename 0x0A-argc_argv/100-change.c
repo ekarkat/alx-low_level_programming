@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
+/*
 	for (j = 0; r[j] != '\0'; j++)
 	{
 		int id = isdigit(r[j]);
@@ -31,8 +31,9 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
+*/
 	a = atoi(argv[1]);
-	if (a < 0)
+	if (a <= 0)
 	{
 		printf("0\n");
 	}
