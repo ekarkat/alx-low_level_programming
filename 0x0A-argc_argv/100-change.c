@@ -12,30 +12,18 @@
 int main(int argc, char *argv[])
 {
 
-	int a, j, c25, c10, c5, c2, c1;
-	char *r = argv[1];
+	int a, c25, c10, c5, c2, c1;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-/*
-	for (j = 0; r[j] != '\0'; j++)
-	{
-		int id = isdigit(r[j]);
-
-		if (id == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-	}
-*/
 	a = atoi(argv[1]);
 	if (a <= 0)
 	{
 		printf("0\n");
+		return (0);
 	}
 	c25 = a / 25;
 	c10 = (a % 25) / 10;
