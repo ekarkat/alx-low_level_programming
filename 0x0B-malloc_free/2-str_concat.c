@@ -10,7 +10,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int ln1, ln2;
+	int ln1, ln2, i, j;
 	char *merge;
 
 	if (s1 == NULL)
@@ -27,7 +27,6 @@ char *str_concat(char *s1, char *s2)
 
 	if (merge == NULL)
 		return (NULL);
-	int i, j;
 
 	for (i = 0; s1[i] != '\0'; i++)
 		merge[i] = s1[i];
