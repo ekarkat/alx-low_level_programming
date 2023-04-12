@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include "main.h"
 
-/*
- * free_grid - free grid for the previous maatrix
- * @grid : previous matrix
- * height : the height
+/**
+ * free_grid - Free previous made matrix
+ * @grid: The maatrix
+ * @height: The height
  */
 
 void free_grid(int **grid, int height)
