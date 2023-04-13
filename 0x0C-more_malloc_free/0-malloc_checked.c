@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
- * malloc_checker - allocate memorry using malloc
+/**
+ * malloc_checked - allocate memorry using malloc
  * @b : integer
  * Return: pointer
  */

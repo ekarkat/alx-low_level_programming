@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
+/**
  * string_nconcat - check the code
  * @s1 : string 1
  * @s2 : string 2
@@ -12,7 +12,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *sum;
-	int l1, l2, i, j;
+	unsigned int l1, l2, i, j;
 
 	if (s1 == NULL)
 		s1 = "";
