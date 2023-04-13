@@ -7,4 +7,16 @@
  * @max : max
  * Return: array pointer;
  */
+int *array_range(int min, int max)
+{
+	int *ln, i;
 
+	if (max < min)
+		return (NULL);
+	ln = malloc(sizeof(int) * (max - min + 1));
+	if (ln == NULL)
+		return (NULL);
+	for (i = 0; i <= max; i++)
+		ln[i] = min + i;
+	return (ln);
+}
