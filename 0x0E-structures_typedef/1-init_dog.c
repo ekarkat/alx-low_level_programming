@@ -15,10 +15,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 
 	dogy = malloc(sizeof(struct dog));
 
-	if (dogy == NULL)
-		exit(1);
-	dogy = d;
-	dogy->name = name;
-	dogy->owner = owner;
-	dogy->age = age;
+	if (dogy != NULL)
+	{
+		dogy = d;
+		dogy->name = name;
+		dogy->owner = owner;
+		dogy->age = age;
+	}
 }
