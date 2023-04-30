@@ -5,7 +5,7 @@
 
 /**
  * main - check the code
- * 
+ *
  * Return: Always 0.
  */
 int main(void)
@@ -16,19 +16,32 @@ int main(void)
     size_t n;
 
     head = &hello;
+
     new = malloc(sizeof(listint_t));
     if (new == NULL)
     {
         printf("Error\n");
         return (1);
     }
+
     new->n = 9;
     new->next = head;
     head = new;
 
-    n = print_listint(head);
+    printf("\n\nbefore exucting listint function \n\n");
+    printf("the value of the node new-> : %d\n", new->n);
+    printf("the value of the node head-> : %d\n", head->n);
 
+    n = listint_len(head);
     printf("-> %lu elements\n", n);
+
+    /**************tests*************/
+
+    printf("\n\nAfter exucting listint function \n\n");
+    printf("the value of the node new->n : %d \n", new->n);
+    printf("the value of the node head-> : %d\n", head->n);
+
+
     free(new);
     return (0);
 }
