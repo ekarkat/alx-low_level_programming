@@ -10,6 +10,7 @@ size_t print_listint(const listint_t *h)
 {
 	size_t n;
 	const struct listint_s *temp;
+
 	temp = h;
 	n = 0;
 	while (temp != NULL)
@@ -20,6 +21,6 @@ size_t print_listint(const listint_t *h)
 	}
 
 	return (n);
-	
+
 
 }
