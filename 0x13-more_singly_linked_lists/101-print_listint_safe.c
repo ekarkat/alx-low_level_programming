@@ -43,7 +43,7 @@ size_t print_listint_safe(const listint_t *head)
 	n = 0;
 	while (temp != NULL)
 	{
-		if (check_address(the_head, temp, i) == 1)
+		if (check_address(the_head, temp, i) == 1 && i != 0)
 		{
 			printf("-> [%p] %d\n", (void *) temp, temp->n);
 			return (n);
