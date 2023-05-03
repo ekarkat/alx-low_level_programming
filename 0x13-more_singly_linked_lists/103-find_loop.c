@@ -16,10 +16,12 @@ listint_t *find_listint_loop(listint_t *head)
 		return (NULL);
 	while (head->next != NULL)
 	{
-		if (node == head)
-			return (node);
+		if (check_address(node, head, i) == 1 && i != 0)
+		{
+
+			return (head);
+		}
 		head = head->next;
-		i++;
 	}
 	return (NULL);
 }
