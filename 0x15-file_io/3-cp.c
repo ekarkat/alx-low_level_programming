@@ -63,12 +63,12 @@ int main(int ac, char *av[])
 	}
 	if (close(fid1) < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %li\n", fid1);
+		dprintf(2, "Error: Can't close fd %li\n", fid1);
 		exit(100);
 	}
 	if (close(fid2) < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %li\n", fid2);
+		dprintf(2, "Error: Can't close fd %li\n", fid2);
 		exit(100);
 	}
 	return (0);
