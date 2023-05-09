@@ -1,5 +1,25 @@
 #include <unistd.h>
 #include <fcntl.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * crate_file - create a file and write to it
+ * @filename: the file name
+ * Return: 1 on success -1 on faillure
+*/
+int crate_file(const char *filename)
+{
+	int fid;
+
+	if (filename == NULL)
+		return (-1);
+	/*open filename fid = file discriptor*/
+	fid = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	if (fid == -1)
+		return (-1);
+	return (1);
+}
 
 /**
  * print_error - print error
@@ -11,8 +31,8 @@ void print_error(char *av, ssize_t n)
 {
 	if (n == 1)
 	{
-	dprintf(2, "Error: Can't read from file %s\n", av);
-	exit(98);
+		dprintf(2, "Error: Can't read from file %s\n", av);
+		exit(98);
 	}
 	if (n == 2)
 	{
@@ -44,7 +64,7 @@ int main(int ac, char *av[])
 		dprintf(2, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
-	fid2 = open(av[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 664);
+	fid2 = crate_file(av[2]);
 	if (fid2 == -1)
 	{
 		dprintf(2, "Error: Can't write from file %s\n", av[2]);
