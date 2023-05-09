@@ -1,6 +1,4 @@
 #include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <fcntl.h>
 
 /**
@@ -61,12 +59,12 @@ int main(int ac, char *av[])
 		if (lnf2 == -1)
 			print_error(av[2], 2);
 	}
-	if (close(fid1) < 0)
+	if (close(fid1) == -1)
 	{
 		dprintf(2, "Error: Can't close fd %li\n", fid1);
 		exit(100);
 	}
-	if (close(fid2) < 0)
+	if (close(fid2) == -1)
 	{
 		dprintf(2, "Error: Can't close fd %li\n", fid2);
 		exit(100);
