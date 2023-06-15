@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * get_dnodeint_at_index - add node at the end
+ * sum_dlistint - sum n in nodes
  * @head : the head of the list
  * Return: the sum
 */
