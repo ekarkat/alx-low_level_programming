@@ -31,9 +31,9 @@ int delete_last(dlistint_t **head)
 
 	while (temp->next != NULL)
 		temp = temp->next;
-	help = temp->next;
-	free(help);
-	temp->next = NULL;
+	help = temp->prev;
+	help->next = NULL;
+	free(temp);
 	return (1);
 }
 
