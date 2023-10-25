@@ -1,5 +1,14 @@
+#!/usr/bin/python3
 def island_perimeter(grid):
+    """
+    Calculates the perimeter of an island in a grid.
 
+    Parameters:
+    - grid: a 2D list representing the grid with 0s and 1s
+
+    Returns:
+    - an integer representing the perimeter of the island
+    """
     px = 0
     py = 0
 
@@ -26,4 +35,4 @@ def island_perimeter(grid):
                         py = py + 1
                 except IndexError:
                     pass
-    return(px + py)
+    return (px + py)
