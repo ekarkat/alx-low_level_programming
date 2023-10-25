@@ -9,6 +9,5 @@ int main(void)
 {
 	print_school();
 	printf("adadagf");
-	printf("fadxaza \n");
 	return (EXIT_SUCCESS);
 }
